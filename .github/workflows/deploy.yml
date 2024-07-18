@@ -19,7 +19,7 @@ jobs:
     - run: |
         aws deploy create-deployment \
         --application-name my-application \
-        --deployment-group-name depgrp-2 \
+        --deployment-group-name depgrp2 \
         --deployment-config-name CodeDeployDefault.OneAtATime \
         --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
 
